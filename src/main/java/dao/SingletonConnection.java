@@ -8,7 +8,7 @@ public class SingletonConnection {
 	static {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/mangeprod?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","root","");
+			Conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/YourDB","username","password");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
